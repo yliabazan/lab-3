@@ -31,3 +31,35 @@ def is_prime(number):
         if number % i == 0:
             return False
     return True
+
+def is_power_of_5(number):
+    """
+    Check if a given number is a power of 5.
+
+    Parameters:
+    - number (int): The number to be checked.
+
+    Returns:
+    - bool: True if the number is a power of 5, False otherwise.
+    """
+    if number <= 0:
+        return False
+    while number % 5 == 0:
+        number //= 5
+    return number == 1
+
+def is_power_of_2(number):
+    """
+    Check if a given number is a power of 2.
+
+    Parameters:
+    - number (int): The number to be checked.
+
+    Returns:
+    - bool: True if the number is a power of 2, False otherwise.
+    """
+    if number <= 0:
+        return False
+    while number % 2 == 0:
+        number //= 2
+    return number == 1
