@@ -1,4 +1,4 @@
-from utils import calculate_factorial
+from utils import calculate_factorial, is_power_of_5, is_power_of_2
 
 result_factorial = calculate_factorial(8)
 print(f"The factorial of 8 is: {result_factorial}")
